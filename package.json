@@ -1,0 +1,26 @@
+{
+  "name": "classyjobprep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "controller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmanuelmota/classyjobprep.git"
+  },
+  "author": "Emmanuel Mota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmanuelmota/classyjobprep/issues"
+  },
+  "homepage": "https://github.com/emmanuelmota/classyjobprep#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
