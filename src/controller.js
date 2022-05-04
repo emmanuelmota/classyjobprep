@@ -41,15 +41,13 @@ angular
 let alertAnimation = (className) => {
   let i = 0;
   while (i < 3) {
-    $(`.${className}`).fadeOut(100);
-    $(`.${className}`).fadeIn(100);
+    $(`.${className}`).fadeOut(100).fadeIn(100);
     i++;
   }
 };
 // ID animations
 $(document).ready(function () {
   $("#logo").click(function () {
-    $("#container").fadeOut("slow");
-    $("#container").fadeIn("slow");
+    $("#container").fadeOut("slow").fadeIn("slow");
   });
 });
