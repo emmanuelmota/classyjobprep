@@ -13,17 +13,19 @@
 </head>
 
 <body>
-  <div id="container">
+  <div id="container" ng-controller="classyPrepController as todoList">
     <img id="logo" src="./src/logo.svg"> </img>
     <h2 class="centerText">Technical Analyst </br>AngularJS + Jquery Demo</h2>
-    <div class="listDiv" ng-controller="classyPrepController as todoList">
-      <!-- Form  with Default submit of addToDo method-->
-      <form ng-submit="todoList.addTodo()">
+    <!-- Form  with Default submit of addToDo method-->
+    <form ng-submit="todoList.addTodo()">
+      <div class="taskField">
         <input class="taskTitle" type="text" ng-model="todoList.todoText" size="30"
           placeholder="What would you like to do today?">
         <!-- Button to submit -->
         <input class="btn-primary" type="submit" value="Let's go!">
-      </form>
+      </div>
+    </form>
+    <div class="listDiv" >
       <!-- List -->
       <ul class="list">
         <!-- For each todo in todoList create a label, input and span -->
@@ -34,14 +36,14 @@
           </label>
         </li>
       </ul>
-      <!--Archive-->
-      <div class="countArchive">{{todoList.remaining()}} of {{todoList.todos.length}} remaining
-        <!-- Archive Button-->
-        <br />
-        <input type="submit" class="crushTaskButton" ng-show="todoList.todos.length >= 1" ng-click="todoList.archive()"
-          value="Crush Completed Tasks">
-      </div>
     </div>
+          <!--Archive-->
+          <div class="countArchive">{{todoList.remaining()}} of {{todoList.todos.length}} remaining
+            <!-- Archive Button-->
+            <br />
+            <input type="submit" class="crushTaskButton" ng-show="todoList.todos.length >= 1" ng-click="todoList.archive()"
+              value="Crush Completed Tasks">
+          </div>
   </div>
 </body>
 

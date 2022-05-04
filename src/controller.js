@@ -4,7 +4,7 @@ angular
   .controller("classyPrepController", function () {
     var todoList = this;
     todoList.todos = [
-      { text: "Demonstrate proficiency with Angular.js and Jquery 👨🏽‍💻", done: false },
+      { text: "Demonstrate proficiency with JS, Angular.js, Jquery 👨🏽‍💻", done: false },
       { text: "Impress the team 👨🏽‍💻", done: false },
       { text: "Join the team and hit the ground running 🙌🏽", done: false },
     ];
